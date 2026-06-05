@@ -28,6 +28,17 @@ max-height: 500px
 
             }
 
+.container {
+width: 100%;
+overflow: hidden;
+display: block;
+height: 360px;
+            }
+
+#glass {
+    margin-left: -220px;
+}
+
 .flexbox > img{
 min-width: 20%;
 
