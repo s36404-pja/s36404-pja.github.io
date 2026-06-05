@@ -12,13 +12,14 @@
         <style>
 
             body {
-                margin:15px;
+                background-image: linear-gradient(to bottom, rgb(19, 41, 33), rgb(29, 106, 119))
             }
 
             header {
-                background-color: rgb(16, 58, 44);
+                font-family: 'helvetica';
                 color: aquamarine;
                 padding: 10px;
+                
             }
 
             div {
@@ -31,56 +32,75 @@
 
 </head>
 
-<body style="
-background-color: rgb(34, 44, 56);"
->
-    <div class="container">
-    <iframe 
-        width="100%" height="100%" 
-        src="https://www.youtube-nocookie.com/embed/8EZhCzFaQuw?si=L74rWlN8Qmh5ToVw;autoplay=1&mute=1"
-        title="YouTube video player" 
-        frameborder="0"  
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
-    </div>
+<body>
     
-    <nav class="nawig">
-
-        <button class="guzior" onclick="location.href='privacy_policy.html'"><b>Our privacy policy</b></button>
-
-    </nav>
-
-    <header style="font-family: helvetica;">
-        <h1>Jeśli to czytasz przegrałeś grę</h1>
-    </header>
-
-    <br>
     
+    <div class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 
-    <p style="
-    margin: 5px;
-    padding: 5px;
-    border: 3px solid rgb(16, 58, 44);">
-     <b>Lorem ipsum</b> dolor sit, amet consectetur adipisicing elit.
-     Ullam totam, eaque minus pariatur assumenda quod modi<br> vel
-     aliquam quidem corrupti nostrum maxime eveniet. Modi facilis 
-     inventore, error consectetur fugiat eveniet?
-    </p>
+<!-- Page content -->
+        <div class="main" style="background-color: rgb(23, 33, 41, 0.5)">
+        
+            <div class="trailercontainer">
+                <video autoplay muted loop id="trailer">
+                    <source src="Grafika/trailer.mp4" type="video/mp4">
+                </video>
+            </div>
 
-    <div class="imag">
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ZdPFBJTOm41c-3Lem1X5J2XYQOsUV9xAEg&s" 
-        alt="nie wiem co to jest">
-        <img src="Grafika/Mug-Root-Beer-355ml.webp" 
-        alt="Mug Root Beer">
-        <img src="Grafika/krosnol.jpg" 
-        alt="przystojny krosnol siedzi">
+                   
+                        <img style="align-self: center; padding: 60px" src="https://wstatic-prod-boc.krafton.com/common/default/20250527/4bxIOFTu/sn2%20logo%20pc%20160.png">
+                        <header class="headerinf1">
+                            <h1>An unofficial wiki for the fauna of Subnautica 2</h1>
+                        </header>
+                    
 
-    </div>
+        </div>
 
-    <marquee style="color: rgb(34, 44, 56);" behavior="scroll" direction="left">すごいですね Jesus answered; "i am the truth and the church" <b>$6 SRIMP SPECIAL</b></marquee>
+         <div class="main" style="padding-top: 5px">
 
+            <nav class="nawig">
+
+                <button class="guzior" onclick="location.href='privacy_policy.html'"><b>Our privacy policy</b></button>
+
+            </nav>
+
+            <header>
+                <h1>Jeśli to czytasz przegrałeś grę</h1>
+            </header>
+
+            <br>
+            
+
+            <p style="
+            margin: 5px;
+            padding: 5px;
+            border: 3px solid rgb(16, 58, 44);">
+            <b>Lorem ipsum</b> dolor sit, amet consectetur adipisicing elit.
+            Ullam totam, eaque minus pariatur assumenda quod modi<br> vel
+            aliquam quidem corrupti nostrum maxime eveniet. Modi facilis 
+            inventore, error consectetur fugiat eveniet?
+            </p>
+
+            <div class="imag">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ZdPFBJTOm41c-3Lem1X5J2XYQOsUV9xAEg&s" 
+                alt="nie wiem co to jest">
+                <img src="Grafika/Mug-Root-Beer-355ml.webp" 
+                alt="Mug Root Beer">
+                <img src="Grafika/krosnol.jpg" 
+                alt="przystojny krosnol siedzi">
+
+            </div>
+
+            <marquee style="color: rgb(34, 44, 56);" behavior="scroll" direction="left">すごいですね Jesus answered; "i am the truth and the church" <b>$6 SRIMP SPECIAL</b></marquee>
+
+
+        </div>
     
 
 </body>
