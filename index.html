@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta font-family="comic sans ms">
+    <meta name="description" content="Unofficial Wiki of the fauna in Subnautica 2">
     <title>Subnautica 2 fauna unofficial Wiki</title>
 
         <link rel="stylesheet" href="guzior.css">
 
-        <style>
+            <script>
+            const pages = [
+                "ENT_branching_coral.html",
+                "ENT_cage_gorgon.html",
+                "ENT_cerathecan.html",
+                "ENT_coral_crab.html",
+                "ENT_listening_gorgon.html"
+            ];
 
-            
-
-            
-
-            
-
-            
-
-        </style>
+            document.getElementById("randombutton").addEventListener("click", () => {
+                const randomIndex = Math.floor(Math.random() * pages.length);
+                const randomPage = pages[randomIndex];
+                window.location.href = randomPage;
+            });
+            </script>
 
 </head>
 
@@ -29,8 +33,8 @@
     <div class="sidenav">
         <button class="guzior" onclick="window.location.href='browse.html'">Browse</button>
         <button class="guzior">Search</button>
-        <button class="guzior">Random</button>
-        <button class="guzior">Feedback</button>
+        <button class="guzior" id="randombutton">Random</button>
+        <button class="guzior" onclick="window.location.href='feedback.html'">Feedback</button>
     </div>
 
 <!-- Page content -->
@@ -40,11 +44,9 @@
 
                 <div class="mainboxtrailer" onclick="window.open('https://store.steampowered.com/app/1962700/Subnautica_2/', '_blank')">
                         <div class="trailercontainer">
-                            <video autoplay muted loop id="trailer">
-                                <source src="Grafika/trailer.mp4" type="video/mp4">
-                            </video> 
+                                 <video autoplay muted><source src="Grafika/Trailer.mp4" type="video/mp4"></video>
                             <img style="position: absolute; justify-self: center; align-self: center" 
-                                src="https://wstatic-prod-boc.krafton.com/common/default/20250527/4bxIOFTu/sn2%20logo%20pc%20160.png">
+                                src="https://wstatic-prod-boc.krafton.com/common/default/20250527/4bxIOFTu/sn2%20logo%20pc%20160.png" alt="Subnautica 2 early access logo">
                         </div>
          
                         <header class="headerinf1">
@@ -68,11 +70,37 @@
                     </p>
 
                     <ul>
-                        <li></li>
+                        <li><a href="ENT_branching_coral.html">Branching Coral</a></li>
+                        <li><a href="ENT_cage_gorgon.html">Cage Gorgon</a></li>
+                        <li><a href="ENT_cerathecan.html">Cerathecan</a></li>
+                        <li><a href="ENT_coral_crab.html">Coral Crab</a></li>
+                        <li><a href="ENT_listening_gorgon.html">Listening Gorgon</a></li>
                     </ul>
 
-                    <marquee style="color: rgb(255, 255, 255);" behavior="scroll" direction="left">すごいですね Jesus answered; "i am the truth and the church" <b>$6 SRIMP SPECIAL</b></marquee>
                 </div>
+
+                <div class="mainbox">
+
+                    <header>
+                        <h1><b>About us</b></h1>
+                        
+                    </header>
+                    <hr>
+                    <p>
+                        This Wiki was created as a project. It operates from GitHub, <br>and was written in HTML with the use of Visual studio code. <br><br>
+                        We accept feedback, available through the "Feedback" button<br> on the navigation bar. This is a non-profit project. It contains no ads or paid features. <br>We also do not accept donations.<br><br>
+                        You may find the game's Steam store page through the large button at the top of this page.<br>
+                        <u>Thank you for visiting us!</u>
+                    </p>
+
+                </div>
+
+                <footer>
+                    <p>
+                        This site was developed by <b>Mateusz Gajewski</b><br><br>
+                        Student number - <b>s36404</b>
+                    </p>
+                </footer>
 
         </div>
     
